@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Student ID System Form Design</title>
+
+	<style>
+		
+		input[type=text] {
+  			display:block;
+  			width:100%;
+  			margin:10px 0;
+  			padding:10px;
+		}
+
+		input[type=number] {
+  			display:block;
+  			width:100%;
+  			margin:10px 0;
+  			padding:10px;
+		}
+
+		input[type=date] {
+  			display:block;
+  			width:100%;
+  			margin:10px 0;
+  			padding:10px;
+		}
+
+		select {
+  			display:block;
+  			width:105%;
+  			margin:10px 0;
+  			padding:10px;
+		}
+
+		div {
+			width: 40%;
+			margin: auto;
+		}
+
+		font{
+			font-family: arial;
+		}
+
+		input[type=submit] {
+ 			width: 20%;
+  			background-color: #4CAF50;
+  			color: white;
+  			padding: 14px 20px;
+  			margin: 8px 0;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+		}
+
+		input[type=submit]:hover {
+ 		 background-color: #45a049;
+		}
+
+		input[type=reset] {
+ 			width: 20%;
+  			background-color: #4CAF50;
+  			color: white;
+  			padding: 14px 20px;
+  			margin: 8px 0;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+		}
+
+		input[type=reset]:hover {
+ 		 background-color: #45a049;
+		}
+
+	</style>
+
+</head>
+
+
+<body>
+
+	<h1>Student ID System Form Design</h1>
+	<div>
+	<form>
+
+		<label for="lastname">Last name:</label> <br>
+		<input type="text" id="lastname" name="lastname" value="Dela Cruz"> <br>
+		<label for="firstname">First name:</label> <br>
+		<input type="text" id="firstname" name="firstname" value="Juan"> <br>
+		<label for="middlename">Middle name:</label> <br>
+		<input type="text" id="middlename" name="middlename" value="Rizal"> <br>
+
+		<label for="IDnumber">ID number:</label><br>
+		<input type="number" name="IDnumber" maxlength="9"> <br>
+
+		<label for="address">Adress</label> <br>
+		<input type="text" name="address"> <br>
+
+		<label for="birthdate">Birthdate</label> <br>
+		<input type="date" name="birthdate"> <br>
+
+		<label for="course">Course</label><br>
+		<select id="course">
+			<option>Associate in Computer Technology (ACT)</option>
+			<option>Bachelor of Science in Information Technology (BSIT)</option>
+			<option>Bachelor of Science in Computer Science (BSCS) </option>
+			<option>Bachelor of Science in Data Analystics (BSDA) </option>
+			<option>Bachelor of Libray and Information Science (BLIS)</option>
+		</select> <br>
+
+		<label for="econtactname">Emergency Contact Name:</label> <br>
+		<input type="text" id="econtactname" name="econtactname" value="Parent or Legal Guardian"> <br>
+
+		<label for="econtactname">Emergency Contact Number:</label> <br>
+		<input type="number" id="econtactnum" name="econtactnum" maxlength="11"> <br>
+
+		<!--submit button-->
+		<input type="submit" value="Register">
+		<input type="reset" name="Reset">
+
+	</form>	
+</div>
+
+</body>
+
+
+
+</html>
