@@ -173,8 +173,7 @@
 		<input type="text" id="econtactname" name="econtactname" value="Parent or Legal Guardian"> <br>
 
 		<label for="econtactname">Emergency Contact Number:</label> <br>
-		<input type="number" id="econtactnum" name="econtactnum" maxlength="11"> <br>
-
+		<input type="number" id="econtactnum" name="econtactnum" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==11) return false;">
 		<!--submit button-->
 		<input type="submit" value="Register">
 		<input type="reset" name="Reset">
