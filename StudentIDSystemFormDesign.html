@@ -107,7 +107,7 @@
 		<input type="text" id="middlename" name="middlename" value="Rizal"> <br>
 
 		<label for="IDnumber">ID number:</label><br>
-		<input type="number" name="IDnumber" maxlength="9"> <br>
+		<input type="number" name="IDnumber" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;"> <br>
 
 		<label for="address">Adress</label> <br>
 		<input type="text" name="address"> <br>
