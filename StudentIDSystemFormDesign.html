@@ -100,17 +100,17 @@
 	<form>
 
 		<label for="lastname">Last name:</label> <br>
-		<input type="text" id="lastname" name="lastname" value="Dela Cruz"> <br>
+		<input type="text" id="lastname" name="lastname" placeholder=Dela Cruz"> <br>
 		<label for="firstname">First name:</label> <br>
-		<input type="text" id="firstname" name="firstname" value="Juan"> <br>
+		<input type="text" id="firstname" name="firstname" placeholder="Juan"> <br>
 		<label for="middlename">Middle name:</label> <br>
-		<input type="text" id="middlename" name="middlename" value="Rizal"> <br>
+		<input type="text" id="middlename" name="middlename" placeholder="Rizal"> <br>
 
 		<label for="IDnumber">ID number:</label><br>
-		<input type="number" name="IDnumber" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;"> <br>
+		<input type="number" name="IDnumber" placeholder="XXXXXXXXX" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==9) return false;"> <br>
 
 		<label for="address">Address</label> <br>
-		<input type="text" name="address"> <br>
+		<input type="text" name="address" placeholder="House Number, Street, Purok, Barangay, Municipality"> <br>
 
 		<label for="birthdate">Birthdate</label> <br>
 		<input type="date" name="birthdate"> <br>
@@ -170,10 +170,10 @@
 		</select> <br>
 
 		<label for="econtactname">Emergency Contact Name:</label> <br>
-		<input type="text" id="econtactname" name="econtactname" value="Parent or Legal Guardian"> <br>
+		<input type="text" id="econtactname" name="econtactname" placeholder="Parent or Legal Guardian"> <br>
 
 		<label for="econtactname">Emergency Contact Number:</label> <br>
-		<input type="number" id="econtactnum" name="econtactnum" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==11) return false;">
+		<input type="number" id="econtactnum" placeholder="09XXXXXXXXX" name="econtactnum" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==11) return false;">
 		<!--submit button-->
 		<input type="submit" value="Register">
 		<input type="reset" name="Reset">
